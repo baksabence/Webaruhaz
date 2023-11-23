@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "n n n"
+    "a a j"
+    "a a j"
+    "f f f";
+}
+
+img{
+    padding: 5px;
+    width: 100%;
+}
+
+body {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    background-image: url("kepek/hatter.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+nav ul{
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    list-style-type: none;
+    text-align: center;
+    gap: 5px;
+}
+
+nav li{
+    border: 2px solid blue;
+    padding: 5px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+div {
+    padding: 5px;
+}
+
+h2{
+    font-size: 15px;
+}
+
+aside {
+    width: 95%;
+    background-color: white;
+  }
+
+
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+    padding: 10px;
+    grid-gap: 10px;
+    background-color: azure;
+}
+
+#kosaram{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.kocsiarak{
+    font-size: 15px;
+    text-align: right;
+}
+
+.kosarba{
+    border: 1px black;
+    font-size: 15px;
+}
+
+.arak{
+    text-align: right;
+}
+
+nav{
+    grid-area: n;
+}
+
+article{
+    grid-area: a;
+}
+
+aside{
+    grid-area: j;
+}
+
+footer{
+    grid-area: f;
+}
+
+#Mazda{
+    display: grid;
+    background-color: white;
+}
+
+#Honda{
+    background-color: white;
+}
+
+#Toyota{
+    background-color: white;
+}
+
+#Skyline {
+    background-color: white;
+}
+
+#Mitsubishi{
+    background-color: white;
+}
+
+#Silvia{
+    background-color: white;
+}
