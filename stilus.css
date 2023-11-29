@@ -1,75 +1,25 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box; 
-}
-
-
-
 main{
+    margin: 0;
+    padding: 15px;
+    background-color: rgb(255, 166, 0);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
     "n n n"
-    "a a j"
-    "a a j"
+    "a a s"
+    "a a s"
     "f f f";
 }
 
+
 img{
-    padding: 5px;
     width: 100%;
 }
 
-body {
+body{
+    margin: auto;
     width: 90%;
-    max-width: 900px;
-    margin: auto;
-    background-image: url("kepek/hatter.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-
-nav ul{
-    display: grid;
-    grid-template-columns: 80px 80px 80px;
-    list-style-type: none;
-    text-align: center;
-    gap: 5px;
-}
-
-nav li{
-    border: 2px solid blue;
-    padding: 5px;
-}
-
-nav a{
-    text-decoration: none;
-}
-
-div {
-    padding: 5px;
-}
-
-h2{
-    font-size: 15px;
-}
-
-aside {
-    width: 95%;
-    background-color: white;
-  }
-
-
-article{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: auto;
-    padding: 10px;
-    grid-gap: 10px;
-    background-color: azure;
+    max-width: 1300px;
 }
 
 #kosaram{
@@ -77,57 +27,100 @@ article{
     grid-template-columns: 1fr 1fr;
 }
 
-.kocsiarak{
-    font-size: 15px;
-    text-align: right;
+nav ul{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    list-style-type: none;
+    margin: 0;
 }
 
-.kosarba{
-    border: 1px black;
-    font-size: 15px;
+
+nav li{
+    border: 2px solid rgb(247, 247, 247);
+    padding: 10px;
 }
 
-.arak{
-    text-align: right;
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+div{
+    background-color: white;
+    margin: 5px;
 }
 
 nav{
     grid-area: n;
 }
 
+aside{
+    grid-area: s;
+    padding-left: 5px;
+    background-color: white;
+    text-align: right;
+}
+
+
 article{
     grid-area: a;
 }
 
-aside{
-    grid-area: j;
+h2{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.autokegymasmellett{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 footer{
     grid-area: f;
+    text-align: center;
+    color:bisque;
 }
 
-#Mazda{
+
+article{
     display: grid;
-    background-color: white;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-#Honda{
-    background-color: white;
+
+.autokepform{
+    padding: 3px;
 }
 
-#Toyota{
-    background-color: white;
+
+button{
+    color: rgb(0, 0, 0);
 }
 
-#Skyline {
-    background-color: white;
+
+.arak{
+    text-align: right;
 }
 
-#Mitsubishi{
-    background-color: white;
+.kocsiarak{
+    text-align: right;
 }
 
-#Silvia{
-    background-color: white;
+
+@media only screen and (max-width: 800px) {
+    main{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "n"
+        "s"
+        "a"
+        "f";
+    }
+    article{
+        grid-template-columns: 1fr;
+    }
 }
